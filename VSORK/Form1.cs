@@ -61,136 +61,71 @@ namespace VSORK
 
         }
 
+        private void CodeShortenerForCalculatorButtons(string value)
+        {
+            if (txtDisplay.Text == "0" || txtDisplay.Text == "-0")
+            {
+                txtDisplay.Text = value;
+            }
+            else if (!txtDisplay.Text.Contains(",") || value != ",")
+            {
+                txtDisplay.Text += value;
+            }
+        }
+
         private void buttonCalc0_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "0";
-            }
-            else
-            {
-                txtDisplay.Text = txtDisplay.Text + "0";
-            }
+            CodeShortenerForCalculatorButtons("0");
         }
 
         private void buttonCalc1_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "1";
-            }
-            else
-            {
-                txtDisplay.Text = txtDisplay.Text + "1";
-            }
+            CodeShortenerForCalculatorButtons("1");
         }
 
         private void buttonCalc2_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "2";
-            }
-            else
-            {
-                txtDisplay.Text = txtDisplay.Text + "2";
-            }
+            CodeShortenerForCalculatorButtons("2");
         }
 
         private void buttonCalc3_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "3";
-            }
-            else
-            {
-                txtDisplay.Text = txtDisplay.Text + "3";
-            }
+            CodeShortenerForCalculatorButtons("3");
         }
 
         private void buttonCalc4_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "4";
-            }
-            else
-            {
-                txtDisplay.Text = txtDisplay.Text + "4";
-            }
+            CodeShortenerForCalculatorButtons("4");
         }
 
         private void buttonCalc5_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "5";
-            }
-            else
-            {
-                txtDisplay.Text = txtDisplay.Text + "5";
-            }
+            CodeShortenerForCalculatorButtons("5");
         }
 
         private void buttonCalc6_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "6";
-            }
-            else
-            {
-                txtDisplay.Text = txtDisplay.Text + "6";
-            }
+            CodeShortenerForCalculatorButtons("6");
         }
 
         private void buttonCalc7_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "7";
-            }
-            else
-            {
-                txtDisplay.Text = txtDisplay.Text + "7";
-            }
+            CodeShortenerForCalculatorButtons("7");
         }
 
         private void buttonCalc8_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "8";
-            }
-            else
-            {
-                txtDisplay.Text = txtDisplay.Text + "8";
-            }
+            CodeShortenerForCalculatorButtons("8");
         }
 
         private void buttonCalc9_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = "9";
-            }
-            else
-            {
-                txtDisplay.Text = txtDisplay.Text + "9";
-            }
+            CodeShortenerForCalculatorButtons("9");
         }
 
         private void buttonCalcDecimal_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text == "0")
-            {
-                txtDisplay.Text = ",";
-            }
-            else
-            {
-                txtDisplay.Text = txtDisplay.Text + ",";
-            }
+            CodeShortenerForCalculatorButtons(",");
         }
 
         private void buttonCalcEquals_Click(object sender, EventArgs e)
